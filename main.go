@@ -24,7 +24,6 @@ func addStrings(num1 string, num2 string) string {
   maxLen := int(math.Max(float64(len(num1)), float64(len(num2))))
   restArr := make([]byte, maxLen+1)
   resCurrIndex := len(restArr)-1
-  fmt.Printf("resCurrIndex %d\n", resCurrIndex)
 
   for num1Ptr >= 0 || num2Ptr >= 0 {
 
