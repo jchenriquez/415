@@ -46,7 +46,7 @@ func addStrings(num1 string, num2 string) string {
     restArr[0] = carryOver+'0'
   }
 
-  if restArr[0] == '0' && num1[0] != '0' && num2[0] != '0' {
+  if restArr[0] == 0 && num1[0] != '0' && num2[0] != '0' {
     return string(restArr[1:])
   }
 
